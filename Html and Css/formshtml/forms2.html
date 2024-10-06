@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- CREATE TEXT FILED IN FORMS or BY DEFALUT INPUT TAG WITHOUT 
+         A TYPE TEXT IT WILL ALSO CREATE A TEXT TYPE INPUT -->
+
+         <label for="textfield1"> textfield :</label>
+         <input type="text" name = "textfield1" id = "textfield1">
+
+         <br>
+         <br>
+         <label for="button1"> Button:</label>
+         <input type="submit" name="button1" id="button1" value=" subscribe">
+        <br>
+        <br>
+       
+        
+        
+        
+
+          <label for="radio1"> RadioButton:</label>
+          <input type="radio" name="radio1" id="button1" >
+         <br>
+         <br>
+         <label for="radio2"> RadioButton2:</label>
+         <input type="radio" name="radio2" id="button2"  >
+
+        <br>
+        <br>
+            <label for="radio3"> RadioButton3:</label>
+          <input type="radio" name="radio3" id="button3" >
+         <br>
+         <br>
+         <!-- how i do select one radio button what is wrong in this code Radio button 
+         
+         <label for="radio1"> RadioButton:</label>
+          <input type="radio" name="radio1" id="button1" >
+         <br>
+         <br>
+         <label for="radio2"> RadioButton2:</label>
+         <input type="radio" name="radio2" id="button2"  >
+
+        <br>
+        <br>
+            <label for="radio3"> RadioButton3:</label>
+          <input type="radio" name="radio3" id="button3" >
+         <br>
+         <br>
+          -->
+         <!-- 
+The issue with the provided code is that each radio button has a different name attribute. 
+For radio buttons to be part of the same group, and therefore to allow only one to be selected at a time, 
+they must all share the same name attribute.
+
+Here's how you can correct the code:
+
+ -->
+
+        
+          <!-- Radio button -->
+          <label for="radio1"> RadioButton:</label>
+          <input type="radio" name="radioGroup" id="button1" >
+         
+         <label for="radio2"> RadioButton2:</label>
+         <input type="radio" name="radioGroup" id="button2"  >
+
+        
+            <label for="radio3"> RadioButton3:</label>
+          <input type="radio" name="radioGroup" id="button3" >
+         
+<!-- name="radioGroup": All the radio buttons share the same name attribute (radioGroup in this case). This groups them together, ensuring that only one of them can be selected at a time.
+id Attribute: Each radio button has a unique id for identification, but the name is the same to ensure they behave as a group.
+With this setup, when the user selects one of the radio buttons, any previously selected radio button in the same group will be automatically deselected.
+
+ -->
+
+ <!-- CHECKBOS BUTTON -->
+<h1> checkbox button</h1>
+
+ <label for="checkbox1"> englsih:</label>
+          <input type="checkbox" name="checkbox1" id="checkbox1" >
+         
+         <label for="checkbox2"> hindi :</label>
+         <input type="checkbox" name="checkbox1" id="checkbox2"  >
+
+        
+            <label for="checkbox3"> math :</label>
+          <input type="checkbox" name="checkbox1" id="checkbox3" >
+         <br>
+         <br>
+
+         <h1>file select</h1>
+         <label for="fileselect1"> Upload</label>
+         <input type="file" name="fileselect1" id="fileselect1">
+         <br> <br>
+
+         <!-- image button create -->
+          <h1>  image button </h1>
+
+          <input type="image" name="imagebutton1" id = "imagebutton1"
+          alt="click here" src="C:\Users\Lakhan Pal\Downloads\arrow2"
+          width="50px" height="10px">
+
+          <h1> password filed in form</h1>
+          <label for="password1">Password: </label>
+          <input type ="password" name="password1" id="password1">
+         
+          <br><br>
+          <h1> date in form</h1>
+          <label for="datepicker1"> choose date :</label>
+
+          <input type="date" name="datepicker1" id = "datepicker1"> <br><br>
+
+          <h1> filed and legend in form</h1>
+          <!-- filed set and legend in formms -->
+<fieldset>
+  <legend>Personalia:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+</fieldset>
+
+
+
+
+
+
+
+
+
+          
+
+
+    </form>
+</body>
+</html>

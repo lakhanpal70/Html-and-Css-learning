@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- MEDIA QUERY : A media query in CSS is a technique used to apply different styles to a website based on the characteristics of the user's device, such as screen width, height, orientation, and resolution. Media queries allow you to create responsive designs that adjust the layout and appearance of your content to suit various screen sizes, from mobile phones to desktop monitors.
+     Syntax of a Media Query
+css
+
+@media (condition) {
+    /* CSS rules */
+} -->
+</head>
+<style>
+    /* .box{
+        height: 400px;
+        width: 400px;
+        background-color: aliceblue;
+        border: 1px solid black;
+
+        
+    } */
+
+    /* Common Conditions
+Width-based Conditions:
+
+min-width: Applies styles if the viewport is at least the specified width.
+max-width: Applies styles if the viewport is no wider than the specified widt */
+  
+
+
+
+
+
+
+/* @media (min-width:300px) and (max-width:500px){
+    .box{
+        background-color: green;
+
+    }
+
+  }
+     */
+/* 
+
+     .container{
+        background-color: beige;
+        border: 5px solid black;
+        padding: 2px;
+        margin: 2px;
+        display: flex;
+    
+    
+    }
+        .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+           
+    }
+    #box1{
+        background: blue;
+    }
+    #box2{
+        background-color: rebeccapurple;
+    }
+    #box3{
+        background-color:  red;
+       
+    }
+    
+    #box4{
+        background-color:brown ;
+        
+    }
+    @media (min-width:640px){
+        .container{
+            flex-direction: row;
+        }
+    }
+    @media (max-width:640px){
+        .container{
+            flex-direction: column;
+        }
+    } */
+
+
+
+
+
+    .container{
+        border: 5px solid black;
+        background-color: beige;
+      
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        justify-content: space-between;
+        padding: 2px;
+        margin: 2px;
+       
+    }
+    #boxleft{
+        background-color: aquamarine;
+        border: 1px solid blue;
+        width: 47%;
+        display: flex;
+        flex-direction:column ;
+    }
+    #boxright{
+        background-color: brown;
+        border: 1px solid yellow;
+       
+        width: 50%;
+    }
+
+    p{
+        border: 2px solid red;
+    }
+    img{
+        width: 170px;
+        height: auto;
+    }
+    @media (max-width:640px){
+        .container{
+            flex-direction: column;
+        }
+    }
+  
+</style>
+<body>
+    <!-- <div class="box">
+        my name is lakhan
+    </div>
+     -->
+
+
+
+     <!-- <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+     -->
+
+
+
+     <div class="container">
+        <div id="boxleft"></div>
+        <p>Text1</p>
+        <p>text2</p>
+     </div>
+
+     <div>
+        <div id="boxright"></div>
+        <img src="mahadev ji.jpg" alt="" height="100px">
+     </div>
+
+
+
+</body>
+</html>

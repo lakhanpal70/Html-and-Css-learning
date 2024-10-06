@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .container{
+        background-color: beige;
+        border: 5px solid black;
+        /* display: flex;
+This property turns the element into a flex container, enabling Flexbox layout on its children. All direct children of this container will become flex items, and they will be laid out according to the rules defined by other Flexbox properties.
+ */
+        display: flex;
+
+        /*  
+        display: flex;  this sets the direction of the flex items to be from top to bottom (a vertical column).
+         */
+        flex-direction: column; 
+        /* flex-direction: row;
+This sets the direction of the flex items to be from left to right (a horizontal row).
+ */
+        flex-direction: row;
+
+        /* flex-direction: row-reverse;
+This sets the direction of the flex items to be from right to left, effectively reversing the normal row order.
+ */ 
+        /* flex-direction: row-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* 
+The flex-wrap: wrap; property in CSS is used in conjunction with Flexbox to control the behavior of flex items when they don't fit into a single line within the flex container.
+ */
+ height: 500px;
+
+ /* justify-content: center; */
+
+
+
+ /* justify-content controls horizontal alignment (main axis) of items within a flex container.
+align-items controls vertical alignment (cross axis) of items within a flex container.
+The current setup will vertically center items, and you can adjust the horizontal alignment by using justify-content
+ */
+
+/* 
+ justify-content: space-between; */
+
+ /* align-items: center; */
+
+
+
+
+ align-content: start;
+
+ /* The align-content: start; property in CSS is used in a flex container to control the alignment of the entire flex lines (rows or columns of flex items) along the cross axis when there is extra space in the flex container.
+  */
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+           
+    }
+    #box1{
+        background: blue;
+
+        /* Flex item :    order: 500;
+        flex-shrink: 4;
+        flex-grow: 5;
+        flexbasis
+         */
+
+        order: 500;
+        flex-shrink: 4;
+        flex-grow: 5;
+    }
+    #box2{
+        background-color: rebeccapurple;
+    }
+    #box3{
+        background-color:  red;
+        align-self: end;
+    }
+    
+    #box4{
+        background-color:brown ;
+        order: -1;
+/*         
+        flex-basis: 400px; 
+        
+        The flex-basis property in CSS defines the initial size of a flex item before any available space is distributed based on the flex-grow and flex-shrink properties. It sets the starting point for the flex item’s size along the main axis (horizontal by default).
+        */
+    }
+   </style>
+    <!-- Flexbox: Flexbox is powerful for building responsive layouts and handling alignment, spacing, and distribution of elements within a container. It’s especially useful when you need a layout that adapts to different screen sizes and orientations.-->
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+    
+</body>
+</html>

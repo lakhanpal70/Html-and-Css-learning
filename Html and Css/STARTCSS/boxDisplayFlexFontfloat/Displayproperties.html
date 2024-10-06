@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* With the CSS box-sizing Property
+The box-sizing property allows us to include the padding and border in an element's total width and height.
+
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height: */
+      
+
+/* 
+
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+} */
+
+
+/* Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+
+The following illustration shows two <div> elements with the same specified width and height:
+
+
+ */.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+}
+span{
+    border: 2px solid greenyellow;
+    height: 200px;
+    font-weight: 200   px;
+    margin: 10px;
+    padding: 15px;
+    /* After Applying display: block;:
+The <span> now behaves like a block-level element.
+It takes up the full width available within its parent container. */
+    display:inline-block ;
+}
+
+        /* div{
+            border: 50px solid rebeccapurple;
+            margin: 25px;
+            width: 250px;
+            height: 250px;
+            padding: 50px;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- what is diaplay properties:
+    The display property in CSS is used to control the layout behavior of an element on a web page. It determines how an element is displayed, whether it's a block-level element, inline element, or something else.
+      -->
+    <!-- display property:
+
+display: block;
+
+The element is displayed as a block-level element.
+Takes up the full width available. and also take custom width
+Starts on a new line.
+Examples: <div>, <p>, <h1>, <header>, etc.
+     -->
+
+<!--      
+    <div> welcome to codehelp</div>
+    <div>my name is lakhan</div>
+     -->
+
+     <!-- create a BOX: -->
+
+     <div class="div1">Both divs are the same size now!</div>
+     <br>
+     <div class="div2">Hooray!</div>
+
+
+     <!-- display: inline;
+
+The element is displayed as an inline element.
+Takes up only as much width as necessary.it does not take custom widtha and height
+Does not start on a new line.
+Examples: <span>, <a>, <strong>, etc. -->
+    <!-- custom margin are not apply in inline 
+    and padding are aplly in inline -->
+
+    <span>
+        This is lakhan pal 
+    </span>
+    <span>
+        This is lakhan pal 2.0
+    </span>
+
+     
+</body>
+</html>
+
+
+
+<!-- Can inline span tag be changed in block  -->
+ <!-- Default Behavior: Normally, <span> is an inline element, meaning it only takes up as much width as its content needs and doesn't start on a new line.
+After Applying display: block;:
+The <span> now behaves like a block-level element.
+It takes up the full width available within its parent container.
+Each <span> starts on a new line, with the second span appearing below the first. -->
+
+
+    <!-- INLINE BLOCK : -->
+     <!-- display: inline-block;
+
+Combines features of both block and inline elements.
+Takes up only as much width as necessary but allows you to set height and width.
+Does not start on a new line.
+Commonly used for buttons, images, etc. -->

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- SHADOW IN CSS : TWO TYPE : TEXT AND BOX -->
+<!--- 
+
+1. Box Shadow:
+The box-shadow property adds shadow effects to elements like div, button, etc.
+
+Syntax:
+css
+
+box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+
+offset-x: Horizontal position of the shadow.
+offset-y: Vertical position of the shadow.
+blur-radius: (Optional) The blur effect of the shadow.
+spread-radius: (Optional) The size of the shadow.
+color: Color of the shadow.
+ 
+
+
+
+2. Text Shadow:
+The text-shadow property adds shadow effects to text.
+
+Syntax:
+css
+Copy code
+text-shadow: offset-x offset-y blur-radius color;
+offset-x: Horizontal position of the text shadow.
+offset-y: Vertical position of the text shadow.
+blur-radius: (Optional) The blur effect of the shadow.
+color: Color of the shadow.
+
+-->
+
+
+
+    <style>
+
+
+
+/* 
+                /* In CSS, custom properties (also known as CSS variables) allow you to define reusable values that can be applied throughout your stylesheets. These variables are defined using the -- prefix and accessed using the var() function.
+
+Defining and Using Custom Properties:
+Define a variable with the -- prefix inside a selector (commonly :root for global scope).
+Use the variable with the var() function.
+
+
+*/
+         :root{
+            --primary-color: yellowgreen;
+            --custom-width: 330px;
+         }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            background-color: aquamarine;
+            width:var(--custom-width) ;
+            height: 330px;
+            border: 5px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px purple; */
+
+/* Syntax:
+css
+
+box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+            box-shadow: 10px 20px yellowgreen; */
+            /* Add blur  */
+/* 
+            box-shadow: 10px 20px 5px yellowgreen; */
+
+            /* ADDING SPREAD RADIUS */
+            
+            /* box-shadow: 10px 20px 5px 20px  yellowgreen; */
+
+
+            /*
+The inset keyword in CSS is used with the box-shadow property to create an inner shadow inside an element, rather than the default outer shadow.
+Syntax:
+css
+Copy code
+box-shadow: inset offset-x offset-y blur-radius spread-radius color;
+ 
+Key Points:
+Without inset, the shadow appears outside the box.
+With inset, the shadow appears inside the box, giving a concave effect.
+
+*/
+
+
+
+              /* box-shadow: inset 10px 15px  brown; */
+
+
+
+
+              /* Multiple Shadows:
+You can add multiple shadows by separating them with commas.
+
+Box Shadow with Multiple Shadows: */
+
+                /* box-shadow: 10px 15px red ,15px 10px black; */
+
+
+
+
+
+
+
+        }
+        #head1{
+            /* text-shadow: 2px 3px 2px blueviolet; */
+            text-shadow: yellow 12px 13px 2px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box">
+
+        <img src="profile photo.JPG" alt="" height="100px" width="100px">
+        <h2 id="head1">Welcome to my webpage</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nam perspiciatis laudantium aliquid in ad asperiores voluptatem veritatis deserunt aspernatur quidem distinctio quas ipsam commodi eius sapiente praesentium facere, quasi odio atque maiores corrupti unde. Reiciendis assumenda nemo quae optio?
+
+        </p>
+    </div>
+   </div>

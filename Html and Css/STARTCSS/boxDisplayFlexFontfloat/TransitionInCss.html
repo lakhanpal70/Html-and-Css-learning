@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <!-- Use CSS transitions when you need simple animations, such as hover effects or a smooth change between two states.
+Use CSS animations for more complex interactions, especially when you need multiple stages, looping, or continuous motion.
+Both are essential tools in making a web page interactive and engaging. Which one to use depends on the complexity and nature of the desired effec -->
+
+
+
+<!--
+ property: The CSS property you want to animate (e.g., background-color, width).
+duration: How long the transition takes to complete (e.g., 0.5s or 500ms).
+timing-function: The speed curve for the transition (e.g., linear, ease-in-out).
+delay: Delay before the transition starts (e.g., 1s).
+ --> 
+
+<style>
+    .box{
+        height: 400px;
+        width: 400px;
+        background-color: beige;
+        border: 2px solid black;
+/* 
+        transition-property: all;
+        transition-duration: 4s;
+        /* transition-delay: 1s; */
+        /* transition-timing-function:linear ;
+     */
+
+
+     /* SHORTHAND NOTATION  : 
+     transition: property duration timing-function delay;
+/* 
+*/
+      /* transition: all 2s ease-in 5s ; */ 
+
+      transition: width 2s, height 5s;
+
+
+    }
+    .box:hover{
+        width: 1800px;
+        height: 900px;
+        background-color: blue;
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

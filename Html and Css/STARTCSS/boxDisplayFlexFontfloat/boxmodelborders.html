@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 350px;
+            background-color: aquamarine;
+            /* CREATE BORDER: */
+            
+
+
+            /*  This sets the style of the border to solid, 
+            which means the border will be a continuous line.
+             Other possible values include dashed, dotted, double, etc.
+ */
+
+
+ /*  border-width: 2px;
+What It Does: This sets the thickness of the border to 2 pixels. */
+            /* border-style: solid;
+            border-width: 2px;
+            border-color: brown; */
+
+
+
+            border: solid brown 5px;
+/* What It Does: This is a shorthand property that combines /
+the border-style, border-color, and border-width into a single
+ declaration. */
+
+            border: solid brown 5px;
+/* 
+            border-radius: 25px; */
+
+
+            /* border-top-left-radius: 25px; */
+
+            /* border-top: solid yellow 5px; */
+            border: solid black 3px;
+
+
+            border-radius: 25px;
+/* What It Does: This property sets the radius of the element’s corners, giving them a rounded appearance. */
+            border-radius: 5px;
+
+            
+        }
+        .firstpara{
+            background-color: blanchedalmond;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            padding: 50px;
+            margin: 205px;
+            
+        }
+        .secondpara{
+            background-color: beige;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            padding-left: 25px;
+            margin-top: 50px;
+        }
+        .thirdpara{
+            background-color: aqua;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+
+            /* First Value (25px): This value applies to the top and bottom padding.
+Second Value (50px): This value applies to the left and right padding. */
+            padding: 25px 50px;
+        }
+        span{
+
+            /* Why height and width Don't Apply to span
+The span tag, being an inline element,
+ only occupies as much space as its content needs. 
+ Since it doesn’t behave like a block-level element, 
+ it doesn’t create a box that could have a height or width.
+*/
+            background-color: blanchedalmond;
+            border: solid brown 5px;
+          
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> Welcome to Procoders</h1>
+    <span>
+        my name is lakhan pal 
+    </span>
+    <p class="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae sit hic voluptate reiciendis facilis doloremque, porro nesciunt quam! Voluptate?
+
+    </p>
+    <p class="secondpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis amet magnam provident quia eligendi! Officiis, voluptatem aut nesciunt cupiditate natus libero in sint itaque mollitia voluptatibus aliquid assumenda sunt voluptates nam eum ad vel aspernatur totam. Minus inventore error itaque!
+
+    </p>
+    <p class="thirdpara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptatum temporibus ad, accusantium vel cumque cupiditate fugit esse ipsum adipisci consectetur qui asperiores quibusdam ullam corrupti ipsam consequuntur ratione nobis voluptatem accusamus, dolorem repellendus illo placeat incidunt. Est sunt possimus modi dignissimos iste voluptate ratione consectetur dolor, sapiente expedita tempora ea mollitia doloribus ullam nisi quo dolore. Rem consequatur hic officiis unde repellendus porro laborum! Doloribus reiciendis laborum eveniet delectus!
+        
+    </p>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- BOX MODEL:
+In CSS, the box model refers to the design and layout concept that defines how elements are displayed on a web page. The box model consists of four main components that dictate the size and spacing of elements:
+
+### 1. **Content Box**
+   - **Description:** This is the innermost part of the box model. It represents the actual content of the element, such as text, images, or other nested elements.
+   - **Size:** The `width` and `height` properties directly affect the size of the content box.
+   - **Example:**
+     ```css
+     div {
+         width: 200px;
+         height: 100px;
+     }
+     ```
+
+### 2. **Padding Box**
+   - **Description:** Padding is the space between the content box and the border. It provides a cushion around the content.
+   - **Size:** The `padding` property increases the space around the content, but it does not affect the content's width and height.
+   - **Example:**
+     ```css
+     div {
+         padding: 10px;
+     }
+     ```
+   - **Effect:** Adds 10 pixels of space inside the border around the content.
+
+### 3. **Border Box**
+   - **Description:** The border wraps around the padding and the content. It’s a visible line (or outline) that separates the padding from the margin.
+   - **Size:** The `border` property adds to the overall size of the element and creates a visible boundary around it.
+   - **Example:**
+     ```css
+     div {
+         border: 2px solid black;
+     }
+     ```
+   - **Effect:** Adds a 2-pixel black border around the padding and content.
+
+### 4. **Margin Box**
+   - **Description:** Margin is the outermost layer that provides space between the element’s border and surrounding elements. It creates space outside the border.
+   - **Size:** The `margin` property defines the space outside the border. It does not affect the size of the content, padding, or border.
+   - **Example:**
+     ```css
+     div {
+         margin: 20px;
+     }
+     ```
+   - **Effect:** Adds 20 pixels of space outside the border, separating the element from adjacent elements.
+
+### Visual Representation of the Box Model
+```
++-----------------------------------------+
+|              Margin (outside)           |
+|  +-----------------------------------+  |
+|  |            Border                 |  |
+|  |  +-----------------------------+  |  |
+|  |  |         Padding              |  |  |
+|  |  |  +-----------------------+  |  |  |
+|  |  |  |      Content           |  |  |  |
+|  |  |  +-----------------------+  |  |  |
+|  |  |                             |  |  |
+|  |  +-----------------------------+  |  |
+|  +-----------------------------------+  |
++-----------------------------------------+
+
+
+
+
+
+IMPORTANT TOPIC :
+
+
+
+
+The universal selector in CSS is represented by an asterisk (`*`). It selects all elements on a page, applying the specified styles to every element in the document.
+
+### Example:
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+### Explanation:
+- **`*`**: The asterisk is the universal selector.
+- **`margin: 0;` and `padding: 0;`**: These properties set the margin and padding of all elements to 0, removing the default spacing.
+- **`box-sizing: border-box;`**: This makes sure that padding and border widths are included within the width and height of the elements.
+
+Using the universal selector can be useful for applying global styles or resetting default browser styles across all elements, but it should be used with caution since it can affect performance on very large documents.
+`-->

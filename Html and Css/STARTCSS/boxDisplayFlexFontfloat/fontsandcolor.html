@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+ <!-- FONTS AND COLORS:
+  1.FONT-SIZE :  The font-size property controls the size of the text. You can set it in various units like pixels (px), ems (em), rems (rem), percentages (%), or points (pt).
+
+  2.FONT-FAMILY:The font-family property specifies the typeface (font) to be used for the text. You can list multiple fonts as fallback options in case the first one isn’t available on the user’s device.
+
+  3.FONT-HEIGHT: Although you mentioned "font-height," the correct term in CSS is line-height. It determines the height of each line of text, affecting the space between lines. This helps improve readability or achieve a desired aesthetic.
+
+  4.FONT-STYLE:The font-style property allows you to set the style of the text, such as normal, italic, or oblique.
+
+  5.FONT-WEIGHT: The font-weight property controls the thickness of the text. It can be set to values like normal, bold, or numbers ranging from 100 to 900, where higher numbers indicate thicker text.
+
+   -->
+
+   <!-- COLORS TYPE:
+    1.NAMED:Named colors are predefined color names in CSS that correspond to specific colors. There are 140 standard named colors in CSS, like red, blue, green, black, white, etc.
+
+    2.RGB:The rgb() function defines a color by specifying the intensity of red, green, and blue light. Each value ranges from 0 to 255, where 0 is no intensity (dark) and 255 is full intensity (bright)
+
+    3.HEX:HEX color codes are a way of specifying colors using hexadecimal (base-16) notation. A HEX code is usually 6 digits, representing the red, green, and blue components with two digits each. HEX codes start with a #.
+
+    4.HSL: The hsl() function defines a color based on its hue, saturation, and lightness. Hue is the color type, given as an angle (0-360 degrees), saturation is the intensity of the color (0% to 100%), and lightness is how light or dark the color is (0% is black, 100% is white).
+
+     -->
+    <style>
+        p{
+            font-size: 40px;
+        
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 1000;
+            
+            line-height: 50px;
+        }
+
+        #firstpara{
+            /* NAMED COLORS: */
+            background-color: green;
+            color: antiquewhite;
+        }
+        #secondpara{
+            /* RGB COLOR: */
+            background-color: rgb(68, 0, 255);
+           
+        }
+        #thirdpara{
+            background-color: rgba(145, 125, 0, 1);
+            /* The rgba() function in CSS is used to define colors with an additional alpha (opacity) component, which allows you to set the transparency of the color. */
+        }
+        .firstclass{
+            /* 
+            HEX COLORS:
+            */
+            background-color: #fffab2;
+            /*  The background will be green (#ff for red, Fa for green, b2 for blue) */
+
+
+        }
+        #fourpara{
+            background-color: hsl(0,100%,50% );
+        }
+         
+    </style>
+</head>
+<body>
+    <h1>Wlecome to Procoders</h1>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laudantium, voluptatibus eum quaerat ullam molestiae assumenda culpa reiciendis error exercitationem.
+
+    </p>
+    <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima et optio culpa dolorem, beatae consequatur inventore repellendus voluptatem labore, nam assumenda? Quibusdam nihil sunt voluptates pariatur maiores commodi magnam dolor.
+
+    </p>
+    <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eos in perspiciatis, ad laudantium maiores saepe? Corporis similique rerum, fugit officia molestiae in maiores sed minus possimus quia libero cupiditate reiciendis autem laboriosam, inventore unde officiis iusto quasi voluptates voluptatibus iure neque odit dolorum. Tempore recusandae quis modi, illo temporibus debitis at qui commodi neque corporis vitae, quia ducimus quibusdam deleniti eum est alias inventore ullam labore vel dolores fugiat optio voluptate. Nemo alias eius nesciunt odio minus, laudantium expedita. Quam ipsam nam, dolor consequuntur facilis error, placeat libero minima quo cumque quasi! Nulla cumque blanditiis eveniet labore, qui quia.
+
+    </p>
+    <p class="firstclass">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facere sed quas enim neque labore. Natus consequuntur perspiciatis hic praesentium!
+    </p>
+    <P id="fourpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat, quo rem fuga quibusdam porro mollitia animi. Libero magnam officia quibusdam totam maxime eos ut recusandae doloribus sapiente cum sit quaerat voluptatum animi vitae laudantium in, et aspernatur ex iste obcaecati nulla odit beatae consectetur? Veniam itaque dicta numquam praesentium!
+
+    </P>
+</body>
+</html>

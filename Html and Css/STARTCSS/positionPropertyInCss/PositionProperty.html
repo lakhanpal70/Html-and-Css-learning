@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- POSITION PROPERTIES :
+     1.STATIC: position: static
+This is the default value.
+The element is positioned according to the normal document flow.
+top, right, bottom, and left properties have no effect.
+
+     2.RELATIVE:position: relative;
+
+The element is positioned relative to its normal position in the document flow.
+You can use top, right, bottom, and left properties to adjust the element's position from its normal location.
+The space for the element is still reserved in the normal document flow, even though it is visually moved.
+
+     3.ABSOLUTE:position:(it do the overlapping) absolute lets you place an element at specific coordinates within its nearest positioned ancestor.
+It allows for precise control of an element's position, but since it is removed from the document flow, you need to manage the layout of other elements accordingly.
+absolute: relative to its closest positioned anchetor. its not maintain the gap.
+top,left,right,bottom properties are use in absolute 
+
+
+
+
+
+
+     4.FIXED:The position: fixed property in CSS is used to position an element relative to the browser window, or viewport, rather than any specific parent element. This means that the element will stay in the same position even when the page is scrolled.
+
+     5.STICKY: 
+The position: sticky property in CSS is a hybrid of relative and fixed positioning. An element with position: sticky behaves like relative until it reaches a certain point while scrolling, at which point it "sticks" to a specified position within its parent container and behaves like fixed. --.
+ -->
+
+
+<style>
+        div{
+            border: 2px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .container{
+        /* using relative */
+        position:relative;
+        height: 8000px;
+        background-color: beige;
+
+
+       }
+       
+
+       /* .image2{
+            /* position: relative;
+            top: 100px;
+            left: 100px; */
+
+
+            /* using absolute */
+            /* position: absolute;
+            top: 100px; */
+
+
+         
+       .image4{
+
+        /* USING FIXED : */
+        position: fixed;
+       }
+       .image3{
+        position:sticky;
+        top: 100px;
+
+       }
+       .Box{
+        background-color: aqua;
+        height: 5000px;
+       }
+
+     </style>
+</head>
+<body>
+    <div class="container">
+        <img 
+        src="profile photo.JPG" 
+        alt="poster1"
+        width="300px"
+        height="300px"
+        class="image1"
+        />
+        <img 
+        src="profile photo copy 2.JPG" 
+        alt="poster1"
+        width="300px"
+        height="300px"
+        class="image2"
+        />
+        <img 
+        src="profile photo copy 3.JPG" 
+        alt="poster1"
+        width="300px"
+        height="300px"
+        class="image3"
+        />
+        <img 
+        src="profile photo copy.JPG" 
+        alt="poster1"
+        width="300px"
+        height="300px"
+        class="image4"
+        />
+
+    </div>
+
+
+    <div class="Box">
+        <!-- 
+The position: sticky and position: fixed properties in CSS both allow elements to stay visible as you scroll, but they behave differently in important ways.
+
+Key Differences:
+Attachment Point:
+
+Fixed: An element with position: fixed is always attached to the viewport (the browser window). It stays in the same spot on the screen no matter how much you scroll.
+Sticky: An element with position: sticky is attached to its parent container. It behaves like relative until you scroll to a certain point, then it "sticks" to a position within its container.
+Scroll Behavior:
+
+Fixed: The element remains fixed to the same spot in the viewport, even as you scroll the entire page. It's as if the element is glued to the screen.
+Sticky: The element moves with the page until it reaches a certain scroll position. Once it reaches that point, it sticks there until the parent container is scrolled out of view.
+ -->
+
+    </div>
+
+        

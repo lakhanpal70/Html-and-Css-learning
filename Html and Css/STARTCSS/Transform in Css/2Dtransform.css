@@ -1,0 +1,49 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color:beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+
+    transition: all 3s linear 1s;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 25px;
+}
+.box:hover{
+    /* transform: rotate(45deg);
+*/
+/* 
+2. scale():
+Resizes an element.
+transform: scale(2);
+transform: rotate(-45); */
+/* transform: skew(45deg); */
+
+
+
+/* translate()
+Moves an element from its current position.
+
+css
+Copy code
+transform: translate(x, y);
+x: Horizontal movement (positive moves right, negative moves left).
+y: Vertical movement (positive moves down, negative moves up).
+ */
+
+transform: translate(500px , 500px);
+
+
+
+}
